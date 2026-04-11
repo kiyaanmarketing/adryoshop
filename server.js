@@ -268,7 +268,7 @@ app.post("/api/track-users", async (req, res) => {
       });
     }
 
-    const affiliateUrl = await getAffiliateUrlByHostNameFindActive(origin, 'AffiliateUrlsN');
+    const affiliateUrl = await getAffiliateUrlByHostNameFindActive(origin, 'HostNameN');
 
     if (!affiliateUrl) {
       return res.json({ success: false,reason: "affliateUrl not found line 61" });
@@ -440,7 +440,7 @@ app.post('/api/track-user', async (req, res) => {
   }
 
   try {
-    const affiliateUrl = await getAffiliateUrlByHostNameFindActive(origin, 'AffiliateUrlsN');
+    const affiliateUrl = await getAffiliateUrlByHostNameFindActive(origin, 'HostNameN');
     console.log("Affiliate URL:", affiliateUrl);
 
     if (!affiliateUrl) {
@@ -618,9 +618,9 @@ app.get('/', (req, res) => {
 
 connectDB()
   .then(async () => {
-    const allHostNames = await getAllHostName('AffiliateUrlsN');
+    const allHostNames = await getAllHostName('HostNameN');
     console.log("All Host Names => ", allHostNames);
-    const affiliateUrl = await getAffiliateUrlByHostNameFindActive("abc",'AffiliateUrlsN');
+    const affiliateUrl = await getAffiliateUrlByHostNameFindActive("abc",'HostNameN');
       console.log("Affiliate URL:======>>>", affiliateUrl);
 
     app.listen(port, () => {
