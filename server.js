@@ -165,11 +165,15 @@ const getAffiliateUrlByHostNameFind = async (hostname,TableName) => {
   }
 };
 
-const trackingUrls = {
-  
-  
+const trackingUrls = {};
 
-};
+function injectUniqueId(affiliateUrl, uniqueId) {
+  const encoded = encodeURIComponent(uniqueId);
+  return affiliateUrl
+    .replace(/\{replace_it\}/gi, encoded)
+    .replace(/%7Breplace_it%7D/gi, encoded)
+    .replace(/\{\d+\}/g, encoded);
+}
 
 app.post("/api/scriptdata", async (req, res) => {
   const { url, referrer, coo, origin } = req.body;
@@ -448,9 +452,9 @@ app.post('/api/track-user', async (req, res) => {
       return res.json({ success: true, affiliate_url: "" });
     }
 
-    const finalUrl = affiliateUrl + `&unique_id=${unique_id}`;
-    console.log("Response Data:", { success: true, affiliate_url: affiliateUrl });
-    res.json({ success: true, affiliate_url: affiliateUrl });
+    const finalUrl = injectUniqueId(affiliateUrl, unique_id);
+    console.log("Response Data:", { success: true, affiliate_url: finalUrl });
+    res.json({ success: true, affiliate_url: finalUrl });
   } catch (error) {
     console.error("Error in API:", error.message);
     res.status(500).json({ success: false, error: ' furono server error' });
