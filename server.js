@@ -7,7 +7,7 @@ require("dotenv").config();
 const corsMiddleware = require("./middleware/corsMiddleware");
 const path = require("path");
 const trackingRoutes = require('./routes/tracking');
-const {  connectDB, getDB } = require('./mongo-config');
+const {  connectDB, getDB, nextMidnightIST } = require('./mongo-config');
 const app = express();
 const port = process.env.PORT || 2426;
 
@@ -454,12 +454,57 @@ app.post('/api/track-user', async (req, res) => {
 
     const finalUrl = injectUniqueId(affiliateUrl, unique_id);
     console.log("Response Data:", { success: true, affiliate_url: finalUrl });
+
+    const db = getDB();
+
+    // click_logs is shared across backends — only log origins that are
+    // registered in the site registry.
+    if ((await getTrackedOrigins()).includes(origin)) {
+      const tenSecondsAgo = new Date(Date.now() - 10000);
+      const existing = await db.collection('click_logs').findOne({
+        unique_id,
+        url,
+        timestamp: { $gte: tenSecondsAgo }
+      });
+
+      if (!existing) {
+        await db.collection('click_logs').insertOne({
+          timestamp: new Date(),
+          expireAt: nextMidnightIST(),
+          origin,
+          url,
+          referrer,
+          unique_id,
+          affiliate_url: finalUrl
+        });
+      }
+    }
+
     res.json({ success: true, affiliate_url: finalUrl });
   } catch (error) {
     console.error("Error in API:", error.message);
     res.status(500).json({ success: false, error: ' furono server error' });
   }
 });
+
+let trackedOriginsCache = { list: [], fetchedAt: 0 };
+const TRACKED_ORIGINS_TTL_MS = 60 * 1000;
+
+async function getTrackedOrigins() {
+  const now = Date.now();
+  if (trackedOriginsCache.list.length && now - trackedOriginsCache.fetchedAt < TRACKED_ORIGINS_TTL_MS) {
+    return trackedOriginsCache.list;
+  }
+  try {
+    const db = getDB();
+    const hosts = await db.collection('sites').distinct('host');
+    trackedOriginsCache = { list: hosts, fetchedAt: now };
+    return hosts;
+  } catch (err) {
+    console.error('Failed to load site registry:', err.message);
+    return trackedOriginsCache.list;
+  }
+}
 
 
 app.get('/api/fallback-pixel', (req, res) => {

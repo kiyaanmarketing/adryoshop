@@ -54,9 +54,38 @@ async function ensureIndexes() {
 
     console.log("✅ Unique index ready: dailyClickLimits (hostname + date)");
 
+    // =============================
+    // 3️⃣ TTL Index (click_logs)
+    // Auto-delete at the next midnight IST (calendar-day reset,
+    // not a rolling 24h window) — see expireAt on each inserted doc
+    // =============================
+    await db.collection("click_logs").createIndex(
+      { expireAt: 1 },
+      { expireAfterSeconds: 0 }
+    );
+
+    console.log("✅ TTL index ready: click_logs.expireAt (midnight IST reset)");
+
   } catch (indexErr) {
     console.error("❌ Index creation error:", indexErr.message);
   }
+}
+
+/**
+ * 🕛 Next midnight IST (Asia/Kolkata, UTC+5:30) as a UTC Date.
+ * Used as the `expireAt` value so a MongoDB TTL index deletes the doc
+ * exactly when the calendar day rolls over in India, not N hours later.
+ */
+function nextMidnightIST() {
+  const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000;
+  const nowIST = new Date(Date.now() + IST_OFFSET_MS);
+  const nextMidnightISTAsUTC = Date.UTC(
+    nowIST.getUTCFullYear(),
+    nowIST.getUTCMonth(),
+    nowIST.getUTCDate() + 1,
+    0, 0, 0, 0
+  );
+  return new Date(nextMidnightISTAsUTC - IST_OFFSET_MS);
 }
 
 /**
@@ -72,4 +101,5 @@ function getDB() {
 module.exports = {
   connectDB,
   getDB,
+  nextMidnightIST,
 };
