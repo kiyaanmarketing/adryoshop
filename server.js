@@ -7,7 +7,7 @@ require("dotenv").config();
 const corsMiddleware = require("./middleware/corsMiddleware");
 const path = require("path");
 const trackingRoutes = require('./routes/tracking');
-const {  connectDB, getDB, nextMidnightIST } = require('./mongo-config');
+const {  connectDB, getDB, clickLogExpiry } = require('./mongo-config');
 const app = express();
 const port = process.env.PORT || 2426;
 
@@ -470,7 +470,7 @@ app.post('/api/track-user', async (req, res) => {
       if (!existing) {
         await db.collection('click_logs').insertOne({
           timestamp: new Date(),
-          expireAt: nextMidnightIST(),
+          expireAt: clickLogExpiry(),
           origin,
           url,
           referrer,
