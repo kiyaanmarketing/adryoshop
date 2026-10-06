@@ -49,7 +49,7 @@
   }
 
   function isCheckoutPage() {
-    const keywords = ['cart', 'checkout', 'pay', 'shipping', 'review-order', 'payment'];
+    const keywords = ['cart', 'checkout', 'checkouts', 'pay', 'shipping', 'review-order', 'payment'];
     return keywords.some(function (keyword) {
       return window.location.pathname.toLowerCase().includes(keyword);
     });
